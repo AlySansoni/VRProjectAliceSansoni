@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
+  <Tracking>
+    <ImageTarget name="burjkhalifa" size="0.110000 0.195556" />
+    <ImageTarget name="tajMahal" size="0.170000 0.129930" />
+    <ImageTarget name="StatuaLiberta" size="0.130000 0.172136" />
+    <ImageTarget name="TorrePisa" size="0.130000 0.195500" />
+    <ImageTarget name="EmpireStateBuilding" size="0.130000 0.168194" />
+    <ImageTarget name="torreEiffel" size="0.130000 0.170395" />
+    <ImageTarget name="Colosseo" size="0.190000 0.129912" />
+    <ImageTarget name="stonehenge" size="0.180000 0.129500" />
+    <ImageTarget name="WhiteHouse" size="0.180000 0.115144" />
+    <ImageTarget name="bigBen" size="0.150000 0.152242" />
+    <ImageTarget name="prova" size="0.201000 0.201000" />
+  </Tracking>
+</QCARConfig>

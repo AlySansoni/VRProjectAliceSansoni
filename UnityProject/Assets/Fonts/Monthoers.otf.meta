@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 67f9db21ffb0e1d43bfcbb905894864f
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Swistblnk Monthoers
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: e69c25d50da3a5b42a3a8c1cb3d7075c, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
