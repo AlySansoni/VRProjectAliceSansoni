@@ -145,6 +145,8 @@ Temporary Items
 /[Bb]uilds/
 /[Ll]ogs/
 /[Uu]ser[Ss]ettings/
+/[Pp]ackages/
+/[Qq]CAR/
 /[Aa]ssets/Models/Colosseo/
 /[Aa]ssets/Models/PisaTower/
 /[Aa]ssets/Models/Stonehenge/
@@ -217,6 +219,7 @@ InitTestScene*.unity
 *.rsuser
 *.userosscache
 *.sln.docstates
+*.sln
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 
@@ -293,6 +296,7 @@ StyleCopReport.xml
 *.tlh
 *.tmp_proj
 *_wpftmp.csproj
+*.csproj
 *.log
 *.vspscc
 *.vssscc
