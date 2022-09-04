@@ -182,15 +182,15 @@ MonoBehaviour:
       m_Calls: []
   m_text: Big Ben
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
+  m_sharedMaterial: {fileID: 2100000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278190313
-  m_fontColor: {r: 0.9150943, g: 0, b: 0, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -207,8 +207,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 22
-  m_fontSizeBase: 22
+  m_fontSize: 25
+  m_fontSizeBase: 25
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -497,15 +497,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.50980395}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.89411765}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 0
+  m_Sprite: {fileID: 21300000, guid: 8c125e44fe64cbd428ea507f9e15dfe8, type: 3}
+  m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -558,26 +558,26 @@ MonoBehaviour:
   pauseButton: {fileID: 2019432694}
   restartButton: {fileID: 1577111502}
   description: {fileID: 2093793013}
-  BigBenIta: {fileID: 8300000, guid: 31253375cda1a6742b3e489fd2d9d54a, type: 3}
-  WhiteHouseIta: {fileID: 8300000, guid: 3e1276b2ca10b364c9a963636c95a274, type: 3}
-  EiffelTowerIta: {fileID: 8300000, guid: 81a88fd550ca23e469f3e367057f33d0, type: 3}
-  StonehengeIta: {fileID: 8300000, guid: 85c2ef689df320341828e09c802f70ad, type: 3}
-  EmpireStateBuildingIta: {fileID: 8300000, guid: fad3a7249de195146abd99f9a1869c25, type: 3}
-  PisaTowerIta: {fileID: 8300000, guid: aefbae92cfb88ca448492c5b8752392d, type: 3}
-  TajMahalIta: {fileID: 8300000, guid: 740af92db420a2342a3200cda7f4ff98, type: 3}
-  BurjKhalifaIta: {fileID: 8300000, guid: 7a48538a4b500c04588b0ffb6bd4a010, type: 3}
-  ColosseumIta: {fileID: 8300000, guid: 2ef01ac2954aef94b8f5a79c3a574ec6, type: 3}
-  StatueOfLibertyIta: {fileID: 8300000, guid: def456f7fd6e2a442acc3dd12ac6c748, type: 3}
-  BigBenEng: {fileID: 8300000, guid: e8329772536738f4cb239b0fad4d85d8, type: 3}
-  WhiteHouseEng: {fileID: 8300000, guid: b265832a1213a194ebd70490c730da43, type: 3}
-  EiffelTowerEng: {fileID: 8300000, guid: fbf36fb1fd60e7f4e9427e09b33ab019, type: 3}
-  StonehengeEng: {fileID: 8300000, guid: e17f19f2f07338843afabb05b6b6d2b3, type: 3}
-  EmpireStateBuildingEng: {fileID: 8300000, guid: 3b05ceac30efeea4bba323d4c83adb6f, type: 3}
-  PisaTowerEng: {fileID: 8300000, guid: 5ae5d5a38e5eaff4c86b3e26082cf5fc, type: 3}
-  TajMahalEng: {fileID: 8300000, guid: 298719f68551be346a5ede0825e25896, type: 3}
-  BurjKhalifaEng: {fileID: 8300000, guid: 8a2b127dbe5fbeb4db0536c80dcf4374, type: 3}
-  ColosseumEng: {fileID: 8300000, guid: 2c4600cbaaa99204ca687e6982290938, type: 3}
-  StatueOfLibertyEng: {fileID: 8300000, guid: 5f8b35f7d1936f34e8edd54dc0205d26, type: 3}
+  bigBenIta: {fileID: 8300000, guid: 31253375cda1a6742b3e489fd2d9d54a, type: 3}
+  whiteHouseIta: {fileID: 8300000, guid: 3e1276b2ca10b364c9a963636c95a274, type: 3}
+  eiffelTowerIta: {fileID: 8300000, guid: 81a88fd550ca23e469f3e367057f33d0, type: 3}
+  stonehengeIta: {fileID: 8300000, guid: 85c2ef689df320341828e09c802f70ad, type: 3}
+  empireStateBuildingIta: {fileID: 8300000, guid: fad3a7249de195146abd99f9a1869c25, type: 3}
+  pisaTowerIta: {fileID: 8300000, guid: aefbae92cfb88ca448492c5b8752392d, type: 3}
+  tajMahalIta: {fileID: 8300000, guid: 740af92db420a2342a3200cda7f4ff98, type: 3}
+  burjKhalifaIta: {fileID: 8300000, guid: 7a48538a4b500c04588b0ffb6bd4a010, type: 3}
+  colosseumIta: {fileID: 8300000, guid: 2ef01ac2954aef94b8f5a79c3a574ec6, type: 3}
+  statueOfLibertyIta: {fileID: 8300000, guid: def456f7fd6e2a442acc3dd12ac6c748, type: 3}
+  bigBenEng: {fileID: 8300000, guid: e8329772536738f4cb239b0fad4d85d8, type: 3}
+  whiteHouseEng: {fileID: 8300000, guid: b265832a1213a194ebd70490c730da43, type: 3}
+  eiffelTowerEng: {fileID: 8300000, guid: fbf36fb1fd60e7f4e9427e09b33ab019, type: 3}
+  stonehengeEng: {fileID: 8300000, guid: e17f19f2f07338843afabb05b6b6d2b3, type: 3}
+  empireStateBuildingEng: {fileID: 8300000, guid: 3b05ceac30efeea4bba323d4c83adb6f, type: 3}
+  pisaTowerEng: {fileID: 8300000, guid: 5ae5d5a38e5eaff4c86b3e26082cf5fc, type: 3}
+  tajMahalEng: {fileID: 8300000, guid: 298719f68551be346a5ede0825e25896, type: 3}
+  burjKhalifaEng: {fileID: 8300000, guid: 8a2b127dbe5fbeb4db0536c80dcf4374, type: 3}
+  colosseumEng: {fileID: 8300000, guid: 2c4600cbaaa99204ca687e6982290938, type: 3}
+  statueOfLibertyEng: {fileID: 8300000, guid: 5f8b35f7d1936f34e8edd54dc0205d26, type: 3}
   stopButton: {fileID: 733788138}
   confirmLanguageChange: {fileID: 328308402}
 --- !u!4 &355299752
@@ -976,8 +976,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -412, y: -395}
-  m_SizeDelta: {x: 600, y: 300}
+  m_AnchoredPosition: {x: -363, y: -320}
+  m_SizeDelta: {x: 602.8891, y: 276.2661}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &509939689
 MonoBehaviour:
@@ -992,14 +992,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.98490566, b: 0.98490566, a: 0.98039216}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.8039216}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 21300000, guid: cd1dd03eba7d61b4a9674a6f70732d24, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1971,7 +1971,7 @@ Canvas:
   m_GameObject: {fileID: 674747686}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 1
+  m_RenderMode: 0
   m_Camera: {fileID: 558123880}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
@@ -2240,8 +2240,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -114, y: 150}
-  m_SizeDelta: {x: 135, y: 135}
+  m_AnchoredPosition: {x: -114, y: 148}
+  m_SizeDelta: {x: 130, y: 130}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &736437899
 GameObject:
@@ -2569,7 +2569,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 23, y: -37}
+  m_AnchoredPosition: {x: 29, y: -37}
   m_SizeDelta: {x: 287, y: 38.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &896626281
@@ -2603,8 +2603,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -7682,8 +7682,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -114, y: 600}
-  m_SizeDelta: {x: 135, y: 135}
+  m_AnchoredPosition: {x: -114, y: 538}
+  m_SizeDelta: {x: 130, y: 130}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1556235739
 MonoBehaviour:
@@ -7815,8 +7815,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -114, y: 750}
-  m_SizeDelta: {x: 135, y: 135}
+  m_AnchoredPosition: {x: -114, y: 668}
+  m_SizeDelta: {x: 120, y: 120}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1576824122
 MonoBehaviour:
@@ -7947,8 +7947,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -114, y: 300.00003}
-  m_SizeDelta: {x: 135, y: 135}
+  m_AnchoredPosition: {x: -114, y: 278}
+  m_SizeDelta: {x: 130, y: 130}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1577111502
 MonoBehaviour:
@@ -8270,8 +8270,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -114, y: 750}
-  m_SizeDelta: {x: 135, y: 135}
+  m_AnchoredPosition: {x: -114, y: 668}
+  m_SizeDelta: {x: 130, y: 130}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1612182493
 MonoBehaviour:
@@ -9235,8 +9235,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -114, y: 450}
-  m_SizeDelta: {x: 135, y: 135}
+  m_AnchoredPosition: {x: -114, y: 408}
+  m_SizeDelta: {x: 130, y: 130}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2019432694
 MonoBehaviour:
@@ -9366,7 +9366,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 22.999989, y: -98}
+  m_AnchoredPosition: {x: 28.999998, y: -98}
   m_SizeDelta: {x: 287, y: 38.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2026044124
@@ -9400,8 +9400,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:

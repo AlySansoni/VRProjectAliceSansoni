@@ -7,6 +7,8 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.Serialization;
+
 public class ButtonManager : MonoBehaviour
 {
     public GameObject mainInfos;
@@ -16,26 +18,26 @@ public class ButtonManager : MonoBehaviour
     public Button pauseButton;
     public Button restartButton;
     public AudioSource description;
-    public AudioClip BigBenIta;
-    public AudioClip WhiteHouseIta;
-    public AudioClip EiffelTowerIta;
-    public AudioClip StonehengeIta;
-    public AudioClip EmpireStateBuildingIta;
-    public AudioClip PisaTowerIta;
-    public AudioClip TajMahalIta;
-    public AudioClip BurjKhalifaIta;
-    public AudioClip ColosseumIta;
-    public AudioClip StatueOfLibertyIta;
-    public AudioClip BigBenEng;
-    public AudioClip WhiteHouseEng;
-    public AudioClip EiffelTowerEng;
-    public AudioClip StonehengeEng;
-    public AudioClip EmpireStateBuildingEng;
-    public AudioClip PisaTowerEng;
-    public AudioClip TajMahalEng;
-    public AudioClip BurjKhalifaEng;
-    public AudioClip ColosseumEng;
-    public AudioClip StatueOfLibertyEng;
+    [FormerlySerializedAs("BigBenIta")] public AudioClip bigBenIta;
+    [FormerlySerializedAs("WhiteHouseIta")] public AudioClip whiteHouseIta;
+    [FormerlySerializedAs("EiffelTowerIta")] public AudioClip eiffelTowerIta;
+    [FormerlySerializedAs("StonehengeIta")] public AudioClip stonehengeIta;
+    [FormerlySerializedAs("EmpireStateBuildingIta")] public AudioClip empireStateBuildingIta;
+    [FormerlySerializedAs("PisaTowerIta")] public AudioClip pisaTowerIta;
+    [FormerlySerializedAs("TajMahalIta")] public AudioClip tajMahalIta;
+    [FormerlySerializedAs("BurjKhalifaIta")] public AudioClip burjKhalifaIta;
+    [FormerlySerializedAs("ColosseumIta")] public AudioClip colosseumIta;
+    [FormerlySerializedAs("StatueOfLibertyIta")] public AudioClip statueOfLibertyIta;
+    [FormerlySerializedAs("BigBenEng")] public AudioClip bigBenEng;
+    [FormerlySerializedAs("WhiteHouseEng")] public AudioClip whiteHouseEng;
+    [FormerlySerializedAs("EiffelTowerEng")] public AudioClip eiffelTowerEng;
+    [FormerlySerializedAs("StonehengeEng")] public AudioClip stonehengeEng;
+    [FormerlySerializedAs("EmpireStateBuildingEng")] public AudioClip empireStateBuildingEng;
+    [FormerlySerializedAs("PisaTowerEng")] public AudioClip pisaTowerEng;
+    [FormerlySerializedAs("TajMahalEng")] public AudioClip tajMahalEng;
+    [FormerlySerializedAs("BurjKhalifaEng")] public AudioClip burjKhalifaEng;
+    [FormerlySerializedAs("ColosseumEng")] public AudioClip colosseumEng;
+    [FormerlySerializedAs("StatueOfLibertyEng")] public AudioClip statueOfLibertyEng;
     public Button stopButton;
     private String _model;
     public GameObject confirmLanguageChange;
@@ -57,9 +59,9 @@ public class ButtonManager : MonoBehaviour
     
     public void TajMahalFound()
     {
-        _model = "ThajMahal";
+        _model = "TajMahal";
     }
-    
+
     public void BurjKhalifaFound()
     {
         _model = "BurjKhalifa";
@@ -326,66 +328,66 @@ public class ButtonManager : MonoBehaviour
         switch (_model){
             case "BigBen":
                 if (LanguageSetting.Language == "italian")
-                    description.clip = BigBenIta;
+                    description.clip = bigBenIta;
                 else
-                    description.clip = BigBenEng; 
+                    description.clip = bigBenEng; 
                 break;
             case "WhiteHouse":
                 if (LanguageSetting.Language == "italian")
-                    description.clip = WhiteHouseIta;
+                    description.clip = whiteHouseIta;
                 else
-                    description.clip = WhiteHouseEng;
+                    description.clip = whiteHouseEng;
                 break;
             case "Colosseum":
                 if (LanguageSetting.Language == "italian")
-                    description.clip = ColosseumIta;
+                    description.clip = colosseumIta;
                 else
                 {
-                    description.clip = ColosseumEng;
+                    description.clip = colosseumEng;
                 }
 
                 break;
             case "TajMahal":
                 if (LanguageSetting.Language == "italian")
-                    description.clip = TajMahalIta;
+                    description.clip = tajMahalIta;
                 else
-                    description.clip = TajMahalEng;
+                    description.clip = tajMahalEng;
                 break;
             case "BurjKhalifa":
                 if (LanguageSetting.Language == "italian")
-                    description.clip = BurjKhalifaIta;
+                    description.clip = burjKhalifaIta;
                 else
-                    description.clip = BurjKhalifaEng; 
+                    description.clip = burjKhalifaEng; 
                 break;
             case "LibertyStatue":
                     if (LanguageSetting.Language == "italian")
-                        description.clip = StatueOfLibertyIta;
+                        description.clip = statueOfLibertyIta;
                     else
-                        description.clip = StonehengeEng; 
+                        description.clip = stonehengeEng; 
                     break;
             case "EmpireStateBuilding":
                 if (LanguageSetting.Language == "italian")
-                    description.clip = EmpireStateBuildingIta;
+                    description.clip = empireStateBuildingIta;
                 else
-                    description.clip = EmpireStateBuildingEng;
+                    description.clip = empireStateBuildingEng;
                 break;
             case "EiffelTower":
                 if (LanguageSetting.Language == "italian")
-                    description.clip = EiffelTowerIta;
+                    description.clip = eiffelTowerIta;
                 else
-                    description.clip = EiffelTowerEng;
+                    description.clip = eiffelTowerEng;
                 break;
             case "Stonehenge":
                 if (LanguageSetting.Language == "italian")
-                    description.clip = StonehengeIta;
+                    description.clip = stonehengeIta;
                 else
-                    description.clip = StonehengeEng;
+                    description.clip = stonehengeEng;
                 break;
             default:
                 if (LanguageSetting.Language == "italian")
-                    description.clip = PisaTowerIta;
+                    description.clip = pisaTowerIta;
                 else
-                    description.clip = PisaTowerEng;
+                    description.clip = pisaTowerEng;
                 break;
         }
         
