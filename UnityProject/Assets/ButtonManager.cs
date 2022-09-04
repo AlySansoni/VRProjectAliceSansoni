@@ -281,6 +281,7 @@ public class ButtonManager : MonoBehaviour
             phrase.text = "Confermi di voler cambiare lingua?";
             confirmButtons[0].GetComponentInChildren<TMP_Text>().text = "Conferma";
             confirmButtons[1].GetComponentInChildren<TMP_Text>().text = "Annulla";
+            englishButton.gameObject.SetActive(false);
 
         }
         else
@@ -288,8 +289,16 @@ public class ButtonManager : MonoBehaviour
             phrase.text = "Are you sure you want to change the language?";
             confirmButtons[0].GetComponentInChildren<TMP_Text>().text = "Confirm";
             confirmButtons[1].GetComponentInChildren<TMP_Text>().text = "Delete";
+            italianButton.gameObject.SetActive(false);
         }
         
+        playButton.gameObject.SetActive(false);
+        if (pauseButton != null)
+        {
+            pauseButton.gameObject.SetActive(false);
+            restartButton.gameObject.SetActive(false);
+            stopButton.gameObject.SetActive(false);
+        }
         confirmLanguageChange.SetActive(true);
 
     }
@@ -319,7 +328,16 @@ public class ButtonManager : MonoBehaviour
     public void DeleteChange()
     {
         confirmLanguageChange.SetActive(false);
+        playButton.gameObject.SetActive(true);
         playButton.interactable = true;
+        if (LanguageSetting.Language == "italian")
+        {
+            englishButton.gameObject.SetActive(true);
+        }
+        else
+        {
+            italianButton.gameObject.SetActive(true);
+        }
     }
 
     public void StartDescription()
@@ -363,7 +381,7 @@ public class ButtonManager : MonoBehaviour
                     if (LanguageSetting.Language == "italian")
                         description.clip = statueOfLibertyIta;
                     else
-                        description.clip = stonehengeEng; 
+                        description.clip = statueOfLibertyEng; 
                     break;
             case "EmpireStateBuilding":
                 if (LanguageSetting.Language == "italian")

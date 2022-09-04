@@ -270,15 +270,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: eb3a734519d22704aaf0df5090a49b72, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.8
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: eb3a734519d22704aaf0df5090a49b72, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.8
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: eb3a734519d22704aaf0df5090a49b72, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.8
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: eb3a734519d22704aaf0df5090a49b72, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1873,7 +1873,7 @@ MonoBehaviour:
     RequiredFingerCount: 0
     RequiredMouseButtons: 0
     RequiredSelectable: {fileID: 0}
-  axis: {x: 0, y: 0, z: 1}
+  axis: {x: 0, y: -1, z: 0}
   space: 1
   sensitivity: 1
 --- !u!1 &674747686
@@ -1996,15 +1996,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: cde17ff35b7d8b442be4547cb1d21be7, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.5
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: cde17ff35b7d8b442be4547cb1d21be7, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.5
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: cde17ff35b7d8b442be4547cb1d21be7, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.5
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: cde17ff35b7d8b442be4547cb1d21be7, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2012,11 +2012,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: cde17ff35b7d8b442be4547cb1d21be7, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.007
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: cde17ff35b7d8b442be4547cb1d21be7, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -0.004
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: cde17ff35b7d8b442be4547cb1d21be7, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2425,15 +2425,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7d5224c9c0ccbcf4aa4d72f3e18f99fd, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.031
+      value: -0.042
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7d5224c9c0ccbcf4aa4d72f3e18f99fd, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.002
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7d5224c9c0ccbcf4aa4d72f3e18f99fd, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -0.018
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7d5224c9c0ccbcf4aa4d72f3e18f99fd, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2509,7 +2509,7 @@ MonoBehaviour:
     RequiredFingerCount: 0
     RequiredMouseButtons: 0
     RequiredSelectable: {fileID: 0}
-  axis: {x: 0, y: 0, z: -1}
+  axis: {x: 0, y: -1, z: 0}
   space: 1
   sensitivity: 1
 --- !u!114 &805760843
@@ -2997,8 +2997,20 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 83668286b56da7848982f008b68c32d9, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 83668286b56da7848982f008b68c32d9, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 83668286b56da7848982f008b68c32d9, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 83668286b56da7848982f008b68c32d9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.016
+      value: 0.009
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 83668286b56da7848982f008b68c32d9, type: 3}
       propertyPath: m_LocalPosition.y
@@ -3101,7 +3113,7 @@ MonoBehaviour:
     RequiredFingerCount: 0
     RequiredMouseButtons: 0
     RequiredSelectable: {fileID: 0}
-  axis: {x: 0, y: 0, z: -1}
+  axis: {x: 0, y: -1, z: 0}
   space: 1
   sensitivity: 1
 --- !u!1 &1187130365
@@ -3411,7 +3423,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1269459559}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.961, y: 0, z: 1.849}
+  m_LocalPosition: {x: 0.965, y: 0, z: 1.849}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 688839778}
@@ -3733,11 +3745,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2bc9c1f106323b547afd835667fb9400, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 0.016
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2bc9c1f106323b547afd835667fb9400, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.0406
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2bc9c1f106323b547afd835667fb9400, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3753,11 +3765,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2bc9c1f106323b547afd835667fb9400, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2bc9c1f106323b547afd835667fb9400, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2bc9c1f106323b547afd835667fb9400, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -3836,7 +3848,7 @@ MonoBehaviour:
     RequiredFingerCount: 0
     RequiredMouseButtons: 0
     RequiredSelectable: {fileID: 0}
-  axis: {x: 0, y: 0, z: -1}
+  axis: {x: 0, y: -1, z: 0}
   space: 1
   sensitivity: 1
 --- !u!1001 &1403518521
@@ -3868,7 +3880,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3d228ceed8d32e4488fde93d07b89bff, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.004
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3d228ceed8d32e4488fde93d07b89bff, type: 3}
       propertyPath: m_LocalPosition.z
@@ -4248,15 +4260,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f188677372ae2574cbda31ce85e1c4f8, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.8
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f188677372ae2574cbda31ce85e1c4f8, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.8
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f188677372ae2574cbda31ce85e1c4f8, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.8
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f188677372ae2574cbda31ce85e1c4f8, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7487,7 +7499,7 @@ MonoBehaviour:
     RequiredFingerCount: 0
     RequiredMouseButtons: 0
     RequiredSelectable: {fileID: 0}
-  axis: {x: 0, y: 0, z: -1}
+  axis: {x: 0, y: -1, z: 0}
   space: 1
   sensitivity: 1
 --- !u!1 &1511355885
@@ -7816,7 +7828,7 @@ RectTransform:
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
   m_AnchoredPosition: {x: -114, y: 668}
-  m_SizeDelta: {x: 120, y: 120}
+  m_SizeDelta: {x: 130, y: 130}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1576824122
 MonoBehaviour:
@@ -8810,15 +8822,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 00bf132489a00834a972dad8f5f553e4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0
+      value: -0.004
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 00bf132489a00834a972dad8f5f553e4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.012
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 00bf132489a00834a972dad8f5f553e4, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.071
+      value: 0.042
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 00bf132489a00834a972dad8f5f553e4, type: 3}
       propertyPath: m_LocalRotation.w
@@ -9102,11 +9114,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9b3c181daa9535e408647e356b75ab71, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.0794
+      value: 0.08
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9b3c181daa9535e408647e356b75ab71, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9b3c181daa9535e408647e356b75ab71, type: 3}
       propertyPath: m_LocalRotation.w
@@ -9174,7 +9186,7 @@ MonoBehaviour:
     RequiredFingerCount: 0
     RequiredMouseButtons: 0
     RequiredSelectable: {fileID: 0}
-  axis: {x: 0, y: 0, z: 1}
+  axis: {x: 0, y: -1, z: 0}
   space: 1
   sensitivity: 1
 --- !u!114 &2018942530
