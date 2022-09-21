@@ -9,8 +9,6 @@ using UnityEngine.UI;
 public class LanguageSetting : MonoBehaviour
 {
     public static string Language;
-    public GameObject italian;
-    public GameObject english;
     public Button startButton;
 
     public void NewGameButton()

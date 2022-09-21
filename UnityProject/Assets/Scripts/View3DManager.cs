@@ -1,108 +1,117 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Threading;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.UI;
-using TMPro;
 using UnityEngine.Serialization;
+using UnityEngine.UI;
 
-public class ButtonManager : MonoBehaviour
+public class View3DManager: MonoBehaviour
 {
-    public GameObject mainInfos;
-    public Button englishButton;
-    public Button italianButton;
-    public Button playButton;
-    public Button pauseButton;
-    public Button restartButton;
-    public AudioSource description;
-    [FormerlySerializedAs("BigBenIta")] public AudioClip bigBenIta;
-    [FormerlySerializedAs("WhiteHouseIta")] public AudioClip whiteHouseIta;
-    [FormerlySerializedAs("EiffelTowerIta")] public AudioClip eiffelTowerIta;
-    [FormerlySerializedAs("StonehengeIta")] public AudioClip stonehengeIta;
-    [FormerlySerializedAs("EmpireStateBuildingIta")] public AudioClip empireStateBuildingIta;
-    [FormerlySerializedAs("PisaTowerIta")] public AudioClip pisaTowerIta;
-    [FormerlySerializedAs("TajMahalIta")] public AudioClip tajMahalIta;
-    [FormerlySerializedAs("BurjKhalifaIta")] public AudioClip burjKhalifaIta;
-    [FormerlySerializedAs("ColosseumIta")] public AudioClip colosseumIta;
-    [FormerlySerializedAs("StatueOfLibertyIta")] public AudioClip statueOfLibertyIta;
-    [FormerlySerializedAs("BigBenEng")] public AudioClip bigBenEng;
-    [FormerlySerializedAs("WhiteHouseEng")] public AudioClip whiteHouseEng;
-    [FormerlySerializedAs("EiffelTowerEng")] public AudioClip eiffelTowerEng;
-    [FormerlySerializedAs("StonehengeEng")] public AudioClip stonehengeEng;
-    [FormerlySerializedAs("EmpireStateBuildingEng")] public AudioClip empireStateBuildingEng;
-    [FormerlySerializedAs("PisaTowerEng")] public AudioClip pisaTowerEng;
-    [FormerlySerializedAs("TajMahalEng")] public AudioClip tajMahalEng;
-    [FormerlySerializedAs("BurjKhalifaEng")] public AudioClip burjKhalifaEng;
-    [FormerlySerializedAs("ColosseumEng")] public AudioClip colosseumEng;
-    [FormerlySerializedAs("StatueOfLibertyEng")] public AudioClip statueOfLibertyEng;
-    public Button stopButton;
-    private String _model;
-    public GameObject confirmLanguageChange;
+    [SerializeField] private GameObject colosseum;
+    [SerializeField] private GameObject bigBen;
+    [SerializeField] private GameObject tajMahal;
+    [SerializeField] private GameObject whiteHouse;
+    [SerializeField] private GameObject empireState;
+    [SerializeField] private GameObject burjKhalifa;
+    [SerializeField] private GameObject eiffelTower;
+    [SerializeField] private GameObject pisaTower;
+    [SerializeField] private GameObject stoneHenge;
+    [SerializeField] private GameObject libertyStatue;
 
-    public void BigBenFound()
-    {
-        _model = "BigBen";
-    }
+    [SerializeField] private GameObject confirmLanChange;
+    [SerializeField] private Button playButton;
+    [SerializeField] private Button stopButton;
+    [SerializeField] private Button restartButton;
+    [SerializeField] private Button pauseButton;
+    [SerializeField] private Button englishButton;
+    [SerializeField] private Button italianButton;
+    [SerializeField] private GameObject mainInfo;
     
-    public void WhiteHouseFound()
-    {
-        _model = "WhiteHouse";
-    }
+    [SerializeField] private AudioClip bigBenIta;
+    [SerializeField] private AudioClip whiteHouseIta;
+    [SerializeField] private AudioClip eiffelTowerIta;
+    [SerializeField] private AudioClip stonehengeIta;
+    [SerializeField] private AudioClip empireStateBuildingIta;
+    [SerializeField] private AudioClip pisaTowerIta;
+    [SerializeField] private AudioClip tajMahalIta;
+    [SerializeField] private AudioClip burjKhalifaIta;
+    [SerializeField] private AudioClip colosseumIta;
+    [SerializeField] private AudioClip statueOfLibertyIta;
+    [SerializeField] private AudioClip bigBenEng;
+    [SerializeField] private AudioClip whiteHouseEng;
+    [SerializeField] private AudioClip eiffelTowerEng;
+    [SerializeField] private AudioClip stonehengeEng;
+    [SerializeField] private AudioClip empireStateBuildingEng;
+    [SerializeField] private AudioClip pisaTowerEng;
+    [SerializeField] private AudioClip tajMahalEng;
+    [SerializeField] private AudioClip burjKhalifaEng;
+    [SerializeField] private AudioClip colosseumEng;
+    [SerializeField] private AudioClip statueOfLibertyEng;
+    [SerializeField] private AudioSource description;
     
-    public void ColosseumFound()
-    {
-        _model = "Colosseum";
-    }
     
-    public void TajMahalFound()
+    // Start is called before the first frame update
+    void Start()
     {
-        _model = "TajMahal";
+        switch (LanguageFavoriteManager.PendingModel)
+        {
+            case "Colosseum":
+                colosseum.SetActive(true);
+                break;
+            case "Stonehenge":
+                stoneHenge.SetActive(true);
+                break;
+            case "BigBen":
+                bigBen.SetActive(true);
+                break;
+            case "BurKhalifa":
+                burjKhalifa.SetActive(true);
+                break;
+            case "EiffelTower":
+                eiffelTower.SetActive(true);
+                break;
+            case "PisaTower":
+                pisaTower.SetActive(true);
+                break;
+            case "WhiteHouse":
+                whiteHouse.SetActive(true);
+                break;
+            case "StatueOfLiberty":
+                libertyStatue.SetActive(true);
+                break;
+            case "TajMahal":
+                tajMahal.SetActive(true);
+                break;
+            case "EmpireStateBuilding":
+                empireState.SetActive(true);
+                break;
+            
+
+        }
+        
+        //playButton.gameObject.SetActive(true);
+        if (LanguageSetting.Language == "italian")
+            englishButton.gameObject.SetActive(true);
+        else
+            italianButton.gameObject.SetActive(true);
+        
+        _mainInfoDisplay();
     }
 
-    public void BurjKhalifaFound()
+    private void _mainInfoDisplay()
     {
-        _model = "BurjKhalifa";
-    }
-    
-    public void LibertyStatueFound()
-    {
-        _model = "LibertyStatue";
-    }
-    
-    public void EmpireBuildingFound()
-    {
-        _model = "EmpireStateBuilding";
-    }
-    
-    public void EiffelTowerFound()
-    {
-        _model = "EiffelTower";
-    }
-    
-    public void StonehengeFound()
-    {
-        _model = "Stonehenge";
-    }
-    public void PisaTowerFound()
-    {
-        _model = "PisaTower";
-    }
+        TMP_Text[] infos = mainInfo.GetComponentsInChildren<TMP_Text>();
 
-    public void OnTargetFound()
-    {
-        TMP_Text[] infos = mainInfos.GetComponentsInChildren<TMP_Text>();
-
-        switch (_model)
+        switch (LanguageFavoriteManager.PendingModel)
         {
             case "BigBen":
                 if (LanguageSetting.Language == "italian")
                 {
                     infos[0].text = "Big Ben";
                     infos[1].text = "Luogo: Londra, Regno Unito";
-                    infos[2].text = "Data: 1834-1858"; 
+                    infos[2].text = "Data: 1834-1858";
                 }
                 else
                 {
@@ -167,7 +176,7 @@ public class ButtonManager : MonoBehaviour
                     infos[2].text = "When: 2004-2009"; 
                 }
                 break;
-            case "LibertyStatue":
+            case "StatueOfLiberty":
                 if (LanguageSetting.Language == "italian")
                 {
                     infos[0].text = "Statua della libertà";
@@ -236,45 +245,119 @@ public class ButtonManager : MonoBehaviour
                     infos[1].text = "Where: Pisa, Italy";
                     infos[2].text = "When: 1173-1373"; 
                 }
-
                 break;
         }
-        mainInfos.SetActive(true);
+        mainInfo.SetActive(true);
         playButton.gameObject.SetActive(true);
         playButton.interactable = true;
         if (LanguageSetting.Language == "italian")
             englishButton.gameObject.SetActive(true);
         else
             italianButton.gameObject.SetActive(true);
-    
+
+
     }
 
-    public void OnTargetLost()
+    public void ReturnToFavourites()
     {
-        mainInfos.SetActive(false);
-        playButton.gameObject.SetActive(false);
-        if (englishButton != null)
-            englishButton.gameObject.SetActive(false);
-        if (italianButton != null)
-            italianButton.gameObject.SetActive(false);
-        if (pauseButton == null) return;
-        pauseButton.gameObject.SetActive(false);
-        stopButton.gameObject.SetActive(false);
-        restartButton.gameObject.SetActive(false);
-        
-        
+        switch (LanguageFavoriteManager.PendingModel)
+        {
+            case "Colosseum":
+                colosseum.SetActive(false);
+                break;
+            case "Stonehenge":
+                stoneHenge.SetActive(false);
+                break;
+            case "BigBen":
+                bigBen.SetActive(false);
+                break;
+            case "BurKhalifa":
+                burjKhalifa.SetActive(false);
+                break;
+            case "EiffelTower":
+                eiffelTower.SetActive(false);
+                break;
+            case "PisaTower":
+                pisaTower.SetActive(false);
+                break;
+            case "WhiteHouse":
+                whiteHouse.SetActive(false);
+                break;
+            case "StatueOfLiberty":
+                libertyStatue.SetActive(false);
+                break;
+            case "TajMahal":
+                tajMahal.SetActive(false);
+                break;
+            case "EmpireStateBuilding":
+                empireState.SetActive(false);
+                break;
+            
+        }
+
         description.Stop();
+        stopButton.gameObject.SetActive(false);
+        pauseButton.gameObject.SetActive(false);
+        restartButton.gameObject.SetActive(false);
+        SceneManager.LoadScene("FavouriteList");
+    }
+ 
+    public void ONPlayClick()
+    {
+        //description.GetComponent<AudioSource>();
+        description.clip = LanguageFavoriteManager.PendingModel switch
+        {
+            "BigBen" => LanguageSetting.Language == "italian" ? bigBenIta : bigBenEng,
+            "WhiteHouse" => LanguageSetting.Language == "italian" ? whiteHouseIta : whiteHouseEng,
+            "Colosseum" => LanguageSetting.Language == "italian" ? colosseumIta : colosseumEng,
+            "TajMahal" => LanguageSetting.Language != "italian" ? tajMahalEng : tajMahalIta,
+            "BurjKhalifa" => LanguageSetting.Language == "italian" ? burjKhalifaIta : burjKhalifaEng,
+            "StatueOfLiberty" => LanguageSetting.Language == "italian" ? statueOfLibertyIta : statueOfLibertyEng,
+            "EmpireStateBuilding" => LanguageSetting.Language == "italian"
+                ? empireStateBuildingIta
+                : empireStateBuildingEng,
+            "EiffelTower" => LanguageSetting.Language == "italian" ? eiffelTowerIta : eiffelTowerEng,
+            "Stonehenge" => LanguageSetting.Language == "italian" ? stonehengeIta : stonehengeEng,
+            _ => LanguageSetting.Language == "italian" ? pisaTowerIta : pisaTowerEng
+        };
 
-
+        description.Play();
+        playButton.interactable = false;
+        pauseButton.gameObject.SetActive(true);
+        stopButton.gameObject.SetActive(true);
+        restartButton.gameObject.SetActive(true);
+        
     }
 
+    public void ONPauseClick()
+    {
+        description.Pause();
+        playButton.interactable = true;
+    }
+
+    public void ONRestartClick()
+    {
+        playButton.interactable = true;
+        description.Stop();
+        description.Play();
+    }
+
+    public void ONStopClick()
+    {
+        description.Stop();
+        playButton.interactable = true;
+        pauseButton.gameObject.SetActive(false);
+        restartButton.gameObject.SetActive(false);
+        stopButton.gameObject.SetActive(false);
+    }
+    
     public void ChangeLanguage()
     {
         if (description.isPlaying)
             description.Pause();
         
-        TMP_Text phrase = confirmLanguageChange.GetComponentInChildren<TMP_Text>();
-        Button[] confirmButtons = confirmLanguageChange.GetComponentsInChildren<Button>();
+        TMP_Text phrase = confirmLanChange.GetComponentInChildren<TMP_Text>();
+        Button[] confirmButtons = confirmLanChange.GetComponentsInChildren<Button>();
         
         if (LanguageSetting.Language == "italian")
         {
@@ -299,7 +382,7 @@ public class ButtonManager : MonoBehaviour
             restartButton.gameObject.SetActive(false);
             stopButton.gameObject.SetActive(false);
         }
-        confirmLanguageChange.SetActive(true);
+        confirmLanChange.SetActive(true);
 
     }
 
@@ -319,15 +402,15 @@ public class ButtonManager : MonoBehaviour
             italianButton.gameObject.SetActive(false);
         }
         
-        confirmLanguageChange.SetActive(false);
+        confirmLanChange.SetActive(false);
+        playButton.gameObject.SetActive(true);
         playButton.interactable = true;
-        OnTargetLost();
-        OnTargetFound();
+
     }
 
     public void DeleteChange()
     {
-        confirmLanguageChange.SetActive(false);
+        confirmLanChange.SetActive(false);
         playButton.gameObject.SetActive(true);
         playButton.interactable = true;
         if (LanguageSetting.Language == "italian")
@@ -340,102 +423,7 @@ public class ButtonManager : MonoBehaviour
         }
     }
 
-    public void StartDescription()
-    {
-        //description.GetComponent<AudioSource>();
-        switch (_model){
-            case "BigBen":
-                if (LanguageSetting.Language == "italian")
-                    description.clip = bigBenIta;
-                else
-                    description.clip = bigBenEng; 
-                break;
-            case "WhiteHouse":
-                if (LanguageSetting.Language == "italian")
-                    description.clip = whiteHouseIta;
-                else
-                    description.clip = whiteHouseEng;
-                break;
-            case "Colosseum":
-                if (LanguageSetting.Language == "italian")
-                    description.clip = colosseumIta;
-                else
-                {
-                    description.clip = colosseumEng;
-                }
 
-                break;
-            case "TajMahal":
-                if (LanguageSetting.Language == "italian")
-                    description.clip = tajMahalIta;
-                else
-                    description.clip = tajMahalEng;
-                break;
-            case "BurjKhalifa":
-                if (LanguageSetting.Language == "italian")
-                    description.clip = burjKhalifaIta;
-                else
-                    description.clip = burjKhalifaEng; 
-                break;
-            case "LibertyStatue":
-                    if (LanguageSetting.Language == "italian")
-                        description.clip = statueOfLibertyIta;
-                    else
-                        description.clip = statueOfLibertyEng; 
-                    break;
-            case "EmpireStateBuilding":
-                if (LanguageSetting.Language == "italian")
-                    description.clip = empireStateBuildingIta;
-                else
-                    description.clip = empireStateBuildingEng;
-                break;
-            case "EiffelTower":
-                if (LanguageSetting.Language == "italian")
-                    description.clip = eiffelTowerIta;
-                else
-                    description.clip = eiffelTowerEng;
-                break;
-            case "Stonehenge":
-                if (LanguageSetting.Language == "italian")
-                    description.clip = stonehengeIta;
-                else
-                    description.clip = stonehengeEng;
-                break;
-            default:
-                if (LanguageSetting.Language == "italian")
-                    description.clip = pisaTowerIta;
-                else
-                    description.clip = pisaTowerEng;
-                break;
-        }
-        
-        description.Play();
-        playButton.interactable = false;
-        pauseButton.gameObject.SetActive(true);
-        stopButton.gameObject.SetActive(true);
-        restartButton.gameObject.SetActive(true);
-    }
-
-    public void PauseDescription()
-    {
-        description.Pause();
-        playButton.interactable = true;
-    }
-
-    public void StopDescription()
-    {
-        description.Stop();
-        playButton.interactable = true;
-        pauseButton.gameObject.SetActive(false);
-        stopButton.gameObject.SetActive(false);
-        restartButton.gameObject.SetActive(false);
-    }
-    public void RestartDescription()
-    {
-        description.Stop();
-        description.Play();
-    }
-    
-   
     
 }
+
