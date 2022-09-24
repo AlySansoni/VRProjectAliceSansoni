@@ -637,7 +637,6 @@ MonoBehaviour:
   description: {fileID: 2093793013}
   stopButton: {fileID: 733788138}
   addFavButton: {fileID: 844675413}
-  favouritesListButton: {fileID: 1264088520}
   confirmFavourite: {fileID: 51610687}
   bigBenIta: {fileID: 8300000, guid: 31253375cda1a6742b3e489fd2d9d54a, type: 3}
   whiteHouseIta: {fileID: 8300000, guid: 3e1276b2ca10b364c9a963636c95a274, type: 3}
@@ -659,6 +658,7 @@ MonoBehaviour:
   burjKhalifaEng: {fileID: 8300000, guid: 8a2b127dbe5fbeb4db0536c80dcf4374, type: 3}
   colosseumEng: {fileID: 8300000, guid: 2c4600cbaaa99204ca687e6982290938, type: 3}
   statueOfLibertyEng: {fileID: 8300000, guid: 5f8b35f7d1936f34e8edd54dc0205d26, type: 3}
+  goToFavourites: {fileID: 1264088520}
 --- !u!4 &355299752
 Transform:
   m_ObjectHideFlags: 0
@@ -4497,15 +4497,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3d228ceed8d32e4488fde93d07b89bff, type: 3}
       propertyPath: m_LocalScale.x
-      value: 8
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3d228ceed8d32e4488fde93d07b89bff, type: 3}
       propertyPath: m_LocalScale.y
-      value: 8
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3d228ceed8d32e4488fde93d07b89bff, type: 3}
       propertyPath: m_LocalScale.z
-      value: 8
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3d228ceed8d32e4488fde93d07b89bff, type: 3}
       propertyPath: m_LocalPosition.x

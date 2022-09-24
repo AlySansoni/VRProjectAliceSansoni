@@ -50,11 +50,18 @@ public class View3DManager: MonoBehaviour
     [SerializeField] private AudioClip colosseumEng;
     [SerializeField] private AudioClip statueOfLibertyEng;
     [SerializeField] private AudioSource description;
+    [SerializeField] private Button goToFavourites;
     
     
     // Start is called before the first frame update
     void Start()
     {
+
+        if (LanguageSetting.Language == "italian")
+            goToFavourites.GetComponentInChildren<TMP_Text>().text = "Preferiti";
+        else
+            goToFavourites.GetComponentInChildren<TMP_Text>().text = "Favourites";
+         
         switch (LanguageFavoriteManager.PendingModel)
         {
             case "Colosseum":
@@ -66,7 +73,7 @@ public class View3DManager: MonoBehaviour
             case "BigBen":
                 bigBen.SetActive(true);
                 break;
-            case "BurKhalifa":
+            case "BurjKhalifa":
                 burjKhalifa.SetActive(true);
                 break;
             case "EiffelTower":
@@ -271,7 +278,7 @@ public class View3DManager: MonoBehaviour
             case "BigBen":
                 bigBen.SetActive(false);
                 break;
-            case "BurKhalifa":
+            case "BurjKhalifa":
                 burjKhalifa.SetActive(false);
                 break;
             case "EiffelTower":
@@ -394,17 +401,20 @@ public class View3DManager: MonoBehaviour
             LanguageSetting.Language = "english";
             englishButton.gameObject.SetActive(false);
             italianButton.gameObject.SetActive(true);
+            goToFavourites.GetComponentInChildren<TMP_Text>().text = "Favourites";
         }
         else
         {
             LanguageSetting.Language = "italian";
             englishButton.gameObject.SetActive(true);
             italianButton.gameObject.SetActive(false);
+            goToFavourites.GetComponentInChildren<TMP_Text>().text = "Preferiti";
         }
         
         confirmLanChange.SetActive(false);
         playButton.gameObject.SetActive(true);
-        playButton.interactable = true;
+        playButton.interactable = true; 
+        _mainInfoDisplay();
 
     }
 

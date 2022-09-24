@@ -33,7 +33,10 @@ public class AddElements : MonoBehaviour
             italianButton.gameObject.SetActive(true);
         }
       
-        if (ButtonManager.NFav == 0)
+        Debug.Log("Button manager nFav " + ButtonManager.NFav);
+        Debug.Log("Saved nFav " + PlayerPrefs.GetInt("NFav"));
+        
+        if (PlayerPrefs.GetInt("NFav",0) == 0)//ButtonManager.NFav == 0)
         {
             emptyListText.text = LanguageSetting.Language == "italian"
                 ? "Non ci sono ancora elementi salvati."

@@ -56,7 +56,7 @@ public class ButtonManager : MonoBehaviour
     public static Boolean ColosseumFav;
     public static Boolean StatueOfLibertyFav;
     public static int NFav;
-    private static readonly int Color1 = Shader.PropertyToID("_Color");
+    [SerializeField] private Button goToFavourites;
 
     private void Start()
     {
@@ -71,6 +71,12 @@ public class ButtonManager : MonoBehaviour
         ColosseumFav = PlayerPrefs.GetInt("Colosseum", 0) != 0;
         StatueOfLibertyFav = PlayerPrefs.GetInt("StatueOfLiberty", 0) != 0;
         NFav = PlayerPrefs.GetInt("NFav", 0);
+        
+
+        if (LanguageSetting.Language == "italian")
+            goToFavourites.GetComponentInChildren<TMP_Text>().text = "Preferiti";
+        else
+            goToFavourites.GetComponentInChildren<TMP_Text>().text = "Favourites";
 
     }
 
@@ -355,12 +361,14 @@ public class ButtonManager : MonoBehaviour
             LanguageSetting.Language = "english";
             englishButton.gameObject.SetActive(false);
             italianButton.gameObject.SetActive(true);
+            goToFavourites.GetComponentInChildren<TMP_Text>().text = "Favourites";
         }
         else
         {
             LanguageSetting.Language = "italian";
             englishButton.gameObject.SetActive(true);
             italianButton.gameObject.SetActive(false);
+            goToFavourites.GetComponentInChildren<TMP_Text>().text = "Preferiti";
         }
         
         confirmLanguageChange.SetActive(false);
@@ -550,13 +558,10 @@ public class ButtonManager : MonoBehaviour
             if (showPanel)
             {
                 if (LanguageSetting.Language == "italian")
-                {
                     phrase2.text = "Aggiunto ai preferiti";
-                }else
-                {
+                else
                     phrase2.text = "Added to favourites";
-                }
-
+                
                 NFav++;
                 PlayerPrefs.SetInt("NFav", NFav);
             }
@@ -569,15 +574,11 @@ public class ButtonManager : MonoBehaviour
             if (showPanel)
             {
                 if (LanguageSetting.Language == "italian")
-                {
                     phrase2.text = "Rimosso dai preferiti";
-                    NFav--;
-                }
+                    
                 else
-                {
                     phrase2.text = "Removed from favourites";
-                    NFav--;
-                }
+                NFav--;
             }
 
         }

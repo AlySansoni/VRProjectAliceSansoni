@@ -46,14 +46,14 @@ public class LanguageFavoriteManager : MonoBehaviour
         if (LanguageSetting.Language == "italian")
         {
             LanguageSetting.Language = "english";
-            englishButton.gameObject.SetActive(false);
+            //englishButton.gameObject.SetActive(false);
             italianButton.gameObject.SetActive(true);
         }
         else
         {
             LanguageSetting.Language = "italian";
             englishButton.gameObject.SetActive(true);
-            italianButton.gameObject.SetActive(false);
+            //italianButton.gameObject.SetActive(false);
         }
         
         confirmLanguageChange.SetActive(false);
@@ -119,7 +119,7 @@ public class LanguageFavoriteManager : MonoBehaviour
                 ButtonManager.BigBenFav = false;
                 PlayerPrefs.SetInt("BigBen", 0);
                 break;
-            case "BurKhalifa":
+            case "BurjKhalifa":
                 ButtonManager.BurjKhalifaFav = false;
                 PlayerPrefs.SetInt("BurjKhalifa", 0);
                 break;
@@ -136,7 +136,7 @@ public class LanguageFavoriteManager : MonoBehaviour
                 PlayerPrefs.SetInt("WhiteHouse", 0);
                 break;
             case "StatueOfLiberty":
-                ButtonManager.StonehengeFav = false;
+                ButtonManager.StatueOfLibertyFav = false;
                 PlayerPrefs.SetInt("StatueOfLiberty", 0);
                 break;
             case "TajMahal":
