@@ -1551,6 +1551,7 @@ MonoBehaviour:
   confirmLanguageChange: {fileID: 592250328}
   confirmRemoveFav: {fileID: 1122318550}
   removedFav: {fileID: 1494672832}
+  scrollContent: {fileID: 187253436}
 --- !u!1 &643118802
 GameObject:
   m_ObjectHideFlags: 0

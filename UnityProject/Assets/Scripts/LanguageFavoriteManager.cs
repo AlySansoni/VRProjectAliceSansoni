@@ -15,7 +15,8 @@ public class LanguageFavoriteManager : MonoBehaviour
     public GameObject confirmRemoveFav;
     public GameObject removedFav;
     [FormerlySerializedAs("_pendingModel")] public static string PendingModel;
-
+    public GameObject scrollContent;
+    private Button []_buttonsInContent;
     public void SwitchLanguage()
     {
         TMP_Text phrase = confirmLanguageChange.GetComponentInChildren<TMP_Text>();
@@ -77,6 +78,11 @@ public class LanguageFavoriteManager : MonoBehaviour
     public void ONTrashClick(Button favButton)
     {
         PendingModel = favButton.name;
+        _buttonsInContent = scrollContent.GetComponentsInChildren<Button>();
+        foreach (var modelButt in _buttonsInContent )
+        {
+            modelButt.interactable = false;
+        }
         ShowConfirmRemoveModel();
     }
 
@@ -104,6 +110,10 @@ public class LanguageFavoriteManager : MonoBehaviour
 
     public void ConfirmRemoveModel()
     {
+        foreach (var modelButt in _buttonsInContent )
+        {
+            modelButt.interactable = true;
+        }
         TMP_Text confPhrase = removedFav.GetComponentInChildren<TMP_Text>();
         switch (PendingModel)
         {
@@ -170,7 +180,11 @@ public class LanguageFavoriteManager : MonoBehaviour
     }
     
     public void DeleteRemoveModel()
-    {
+    {        
+        foreach (var modelButt in _buttonsInContent )
+        {
+            modelButt.interactable = true;
+        }
         confirmRemoveFav.SetActive(false);
     }
     
